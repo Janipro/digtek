@@ -7,7 +7,6 @@
 	.global Start
 	
 Start:
-
 	Loop:
 	LDR R2, =GPIO_BASE + (BUTTON_PORT * PORT_SIZE) + GPIO_PORT_DIN
 	LDR R3, [R2]
@@ -27,12 +26,5 @@ Start:
 	STR R1, [R0]
 	B Loop
 
-
-
-
-
-
-
-
-NOP // Behold denne på bunnen av fila
+NOP
 

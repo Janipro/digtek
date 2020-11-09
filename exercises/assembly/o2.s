@@ -4,7 +4,6 @@
 .include "gpio_constants.s"     // Register-adresser og konstanter for GPIO
 .include "sys-tick_constants.s" // Register-adresser og konstanter for SysTick
 
-
 .text
 	.global Start
 	
@@ -99,6 +98,5 @@ GPIO_ODD_IRQHandler:
 	STR R1, [R0]
 	BX LR
 
-
-NOP // Behold denne på bunnen av fila
+NOP
 
